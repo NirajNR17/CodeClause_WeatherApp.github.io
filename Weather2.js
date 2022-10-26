@@ -22,7 +22,7 @@ btn.addEventListener('click',(e)=>
 });
 
 function weather(search){
-    const api =`http://api.weatherapi.com/v1/current.json?key=c924593541024ffcbed85816222310&q=${search}`;
+    const api =`https://api.weatherapi.com/v1/current.json?key=c924593541024ffcbed85816222310&q=${search}`;
     try{
         fetch(api).then(response => response.json()).then(data => {console.log(data);
             temp.innerHTML = data.current.temp_c + "&#176";
