@@ -166,11 +166,9 @@ small{
         position: relative;
         width: 100%;
         top: initial;
-    }.separator{
-        padding-left: 50px;
     }
     .devloc{
-        width: 400px;
+        width:355px;
     }
 }
 @media screen and (max-width: 500px) {
