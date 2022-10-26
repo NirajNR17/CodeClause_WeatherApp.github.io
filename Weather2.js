@@ -134,12 +134,12 @@ const findlocation = () => {
         console.log(position)
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
-        console.log(longitude + ' '+ latitude);
+        //console.log(longitude + ' '+ latitude);
         const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`
         fetch(geoApiUrl)
         .then(res => res.json())
         .then(data => {
-            console.log(data);
+            //console.log(data);
             search.value = data.principalSubdivision
             weather(search.value);
         })
