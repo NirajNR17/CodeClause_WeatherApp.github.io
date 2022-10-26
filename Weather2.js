@@ -72,7 +72,7 @@ function weather(search){
         
     }
     catch(error){
-        
+        alert("Unable to find city");
     }
 }
 //icon
