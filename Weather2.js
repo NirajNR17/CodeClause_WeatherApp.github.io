@@ -77,7 +77,7 @@ function weather(search){
 }
 //icon
 function iconchange(icontype){
-    if(icontype=="Sunny"){
+    if(icontype=="Sunny" || icontype=="Clear"){
         icon.src="//cdn.weatherapi.com/weather/64x64/day/113.png"
     }
     if(icontype=="Cloudy"){
@@ -104,6 +104,7 @@ function iconchange(icontype){
 }
 
 function iconnight(icontype){
+    if(icontype=="Clear"){}
     if(icontype=="Cloudy"){
         icon.src="//cdn.weatherapi.com/weather/64x64/night/122.png"
     }
